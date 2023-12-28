@@ -21,7 +21,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 Step 1:
 
 
-![image](https://github.com/jasonmolinet/osticket-prereqs/assets/155111890/eca71263-494f-4333-b553-f2c3b7dcca0d)
+![image](https://i.imgur.com/wAPhqS1.jpg)
 
 
 Create Virtual Machine in Azure
@@ -34,7 +34,7 @@ Create Virtual Machine in Azure
 Step 2:
 
 
-![image](https://github.com/jasonmolinet/osticket-prereqs/assets/155111890/fad7f5da-4189-4ba3-add3-5d1f45b745d5)
+![image](https://i.imgur.com/czGO2h6.jpg)
 
 
 Installation
