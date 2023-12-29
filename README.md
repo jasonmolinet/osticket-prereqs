@@ -78,5 +78,60 @@ MySQL and PHP Manager
 
 Step 5:
 
-osTicket and PHP Manager
-- 
+
+![image](https://i.imgur.com/Z5HEmCr.jpg)
+
+
+osTicket Zip
+- Download osTicket zip
+- Open two file explores one of osTicket folder and one of C: inetpub then open wwwroot folder
+- Drag the upload folder from the osTIcket zip in there
+- Rename the upload folder to "osTicket"
+- Restart IIS on the top right
+
+
+![image](https://i.imgur.com/nlhq9sl.jpg)
+
+
+Step 6: 
+Extensions
+- Expand the sites folder on the top left then expand until you see osTicket folder then hit browse link on the right
+- Go back to IIS then PHP manager then click on enable or disable extensions
+- Enable php_imap.dll
+- Enable php_intl.dll
+- Enable php_opcache.dll
+- Go back to browser and refresh until some appear green
+
+
+![image](https://i.imgur.com/J25UzmW.jpg)
+
+
+Step 7:
+Security
+- In file explorer go into c: inetpub > wwwroot > osTicket then rename file from ost-sampleconfig to ost-config
+- Right click on the ost-config file and properties
+- Security then advanced
+- Permissions then disable inheritance
+- Add and select a principal then type "Everyone"
+- Check the name and add then apply and close
+- Basic permissions as full control
+
+
+![image](https://i.imgur.com/mUXt4vM.jpg)
+
+
+Step 8:
+osTicket Browser setup
+- Go back to the browser and contine through the osTicket setup
+- After saving username and password to a note pad
+- Download the mysql database exe "HediSQL"
+- Run HediSQL and go through the installation
+- Launch then click new on the bottom left
+- Username as root and password as Password1
+- Right click on unnamed at the top and create database
+- Name it "osTicket"
+- Go back to browser click install now after filling everything in, MySQL Database: osTicket
+- Go to c: inetpub wwwroot osTicket then right click on the setup folder and delete it
+- Go into the include folder and edit the ost-config php and properties then under security go to advanced and change to read and execute only
+- Finally for admins access http://localhost/osTicket/scp/login.php and click sign in
+- End Users osTicket URL: http://localhost/osTicket/
