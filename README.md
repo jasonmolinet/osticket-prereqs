@@ -42,4 +42,35 @@ Installation
 - Login with saved username and password
 - While in the VM, open microsoft edge and open this link that includes the installation files for osTicket: https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 - Now open control panel > programs > programs and features > turn windows features on or off > then check internet information services then expand to world wide web services then application development features then check "CGI" then under "common http features" under world wide web services make sure everything is checked
-- 
+- To make sure it works, go to the edge browser to 127.0.0.1 in the url then it will load the windows Internet Information Services (IIS) page
+
+Step 3:
+
+
+![image](https://i.imgur.com/LhCoLYc.jpg)
+
+
+osTicket Installation Files
+- Go to installation files for osTicket: https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
+- Download "PHPManagerforIIS" then install to VM
+- Download "rewrite" then install to VM
+- Then go to files under the C: folder create a new folder called PHP
+- Download PHP.zip and unzip in the created folder called PHP
+- Download VC_redist and install
+- Download MySQL and install
+
+
+Step 4:
+
+![image](https://i.imgur.com/CAmCq5p.jpg)
+
+
+MySQL and PHP Manager
+- Launch SQL and choice standard config
+- Write down username: root and password: Password1
+- Hit execute then finish
+- Launch IIS as admin then open PHP Manager
+- Register new PHP version and find the C: in the PHP folder in the new window
+- Click php-cgi
+- Reminder to hit restart on the top right to refresh server
+
