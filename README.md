@@ -62,6 +62,7 @@ osTicket Installation Files
 
 Step 4:
 
+
 ![image](https://i.imgur.com/CAmCq5p.jpg)
 
 
@@ -74,3 +75,8 @@ MySQL and PHP Manager
 - Click php-cgi
 - Reminder to hit restart on the top right to refresh server
 
+
+Step 5:
+
+osTicket and PHP Manager
+- 
